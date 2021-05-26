@@ -1,0 +1,32 @@
+Controllers:
+	-mainPage.js ( <- home.js ) - ready
+	-signupPage.js ( <- register.js ) - ready
+	-profilePage.js - ready
+
+	Controllers to Orders:
+		-newOrder.js ( <- newPost.js )
+		-storeOrder.js ( <- storePost.js )
+		-getOrder.js ( <- getPost.js ) - ready
+
+	Controllers to Authorization:
+		-login.js
+		-signinUser.js
+		-signout.js - ready
+
+		-storeUser.js
+
+Models:
+	-User.js - ready
+	-Order.js ( <- BlogPost.js ) - ready
+
+Middleware:
+	-orderValidationMiddleware.js ( <- validationMiddleware.js )
+	-authMiddleware.js - ready
+	-redirectIfAuthenticatedMiddleware.js - ready
+
+Ejs:
+	-index.ejs
+	-authorization.ejs
+	-profile.ejs
+	-notfound.ejs - ready
+	-order.ejs

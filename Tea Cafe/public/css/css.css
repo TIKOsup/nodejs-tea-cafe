@@ -1,0 +1,555 @@
+/*
+    Background color:       #50a38e
+    Title color:            #996633
+    Text color:             #666666 8c8c8c
+    Text Dark color:        #333333
+    Table Heading color:    #C4CDD6
+    Table Alternate color:  #e5e8ed 
+*/
+
+body {
+  background: -webkit-linear-gradient(left, #50a38e, #84C2B3);
+  color: #333333;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+}
+
+.container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  height: 100px;
+}
+
+.wrapper {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  line-height: 64px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo .header-title {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.logo .header-icon {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 15px;
+}
+
+nav {
+  float: right;
+  line-height: 75px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+li a {
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 0 10px;
+  color: white;
+}
+
+nav a:hover {
+  color: #b8b8b8;
+}
+
+
+
+/* Main */
+
+.main-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.main-image {
+  background-image: url(../img/teaflex-cafe-01.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 425px;
+  border-radius: 20px 20px 0 0;
+}
+
+hr {
+  width: 60%;
+  border: 0.5px solid #ccc;
+}
+
+/* Section */
+
+.section {
+  padding: 20px 20px 30px;
+}
+
+.section-header {
+  color: #996633;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-small {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+/* Menu */
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tr-header {
+  background-color: #c4cdd6;
+  height: 50px;
+}
+
+tr:nth-child(odd) {
+  background-color: #e5e8ed;
+}
+
+th {
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.menu-item .menu-item-title {
+  text-align: left;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer;
+}
+
+.btn-add {
+  max-width: 100%;
+}
+
+.btn-add a {
+  text-decoration: none;
+  color: #23967f;
+}
+
+.btn-add a:hover {
+  color: #1f8470;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #23967f;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #1f8470;
+}
+
+/* Special Items */
+
+.special-items {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.special-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+}
+
+figcaption span {
+  display: block;
+  color: #333333;
+  font-size: 18px;
+}
+
+.special-item-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.special-item-price {
+  padding-bottom: 10px;
+}
+
+/* Cart */
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333333;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+  color: #333333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-price {
+  width: 15%;
+  font-size: 1.2em;
+  color: #333333;
+}
+
+.cart-quantity {
+  width: 40%;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #23967f;
+  background-color: #eee;
+  color: #333333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid #333333;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333333;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+
+/* Talk to us */
+
+.social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+}
+
+.social-link-container {
+  display: inline-block;
+}
+
+.social-link {
+  color: white;
+  background-color: #c5ced8;
+  border-radius: 2px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #808e9e;
+}
+
+.contact-link {
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a {
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #808e9e;
+}
+
+/* Footer */
+
+.footer-text {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #c5ced8;
+}
+
+/* Registration | Authorization */
+
+form {
+  text-align: center;
+}
+
+form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+form .field input {
+  height: 80%;
+  width: 50%;
+  outline: none;
+  padding-left: 15px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+}
+
+form .field input:focus {
+  border-color: #84C2B3;
+}
+
+form .pass-link {
+  margin-top: 5px;
+}
+
+form .pass-link a, form .signup-link a, form .login-link a {
+  color: #50a38e;
+  text-decoration: none;
+}
+
+form .signup-link, form .login-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+form .pass-link a:hover, form .signup-link a:hover, form .login-link a:hover {
+  text-decoration: underline;
+}
+
+form .field input[type="submit"] {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  border: none;
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #50a38e, #84C2B3);
+}
+
+/*Profile*/
+
+.profile-section {
+  display: flex;
+  vertical-align: middle;
+}
+
+.profile-section .profile-info {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.profile-section .profile-pic, form .settings-profile-pic {
+  width: 260px;
+  height: 260px;
+  border-radius: 360px;
+}
+
+#btn-settings {
+  margin-top: 15px;
+  float: right;
+  text-decoration: none;
+}
+
+/*Settings*/
+
+.settings-section {
+  display: inline-block;
+  text-align: left;
+}
+
+.settings-section .settings-field {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.settings-section #username {
+  height: 80%;
+  width: 50%;
+  outline: none;
+  padding-left: 15px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+}
+
+.settings-section #username:focus {
+  border-color: #84C2B3;
+}
+
+.settings-done {
+  text-align: center;
+  margin-top: 100px;
+  width: 88px;
+  height: 40px;
+}
+
+@media (max-width: 550px) {
+  .special-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .special-items {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .special-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .special-items {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .responsive-table {
+    overflow-x: auto;
+  }
+  table {
+    width: auto;
+  }
+  .special-items {
+    flex-direction: column;
+  }
+  .special-item {
+    margin-bottom: 40px;
+  }
+  figcaption p {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+}

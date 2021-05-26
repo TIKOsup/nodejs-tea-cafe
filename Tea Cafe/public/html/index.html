@@ -1,0 +1,259 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TeaFlex Cafe</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="../fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="../css/css.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/Favicon.jpg" type="image/png">
+    <script src="../js/store.js" async></script>
+  </head>
+
+
+  <body>
+    <div class="container">
+
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <i class="fas fa-mug-hot fa-2x header-icon"></i> <!-- Header Icon -->
+            <h1 class="header-title">TeaFlex Cafe</h1> <!-- Header Name -->
+          </div>
+
+          <nav>
+            <a href="login.html">Login</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <div class="main-image"></div> <!-- Main Image -->
+
+        <!-- Menu -->
+        <section class="section">
+          <h2 class="section-header">Menu</h2>
+          <div class="responsive-table">
+
+            <table>
+              <tr class="tr-header">
+                <th>&nbspTea</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+              <!-- Pure White Milk -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Pure White Milk</td>
+                <td class="menu-item-price">$5.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- Hong Kong Tea -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Hong Kong Tea</td>
+                <td class="menu-item-price">$8.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- Taiwan Tea -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Taiwan Tea</td>
+                <td class="menu-item-price">$4.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- Bubble Tea -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Bubble Tea</td>
+                <td class="menu-item-price">$8.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- Mixed Fruit Tea -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Mixed Fruit Tea</td>
+                <td class="menu-item-price">$10.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- Original Tea -->
+              <tr class="menu-item">
+                <td class="menu-item-title">Original Tea</td>
+                <td class="menu-item-price">$12.00</td>
+                <td class="menu-item-addButton">
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </td>
+              </tr>
+
+            </table>
+
+          </div>
+        </section>
+
+        <!-- Special Items -->
+        <section class="section">
+          <h2 class="section-header">Special Items</h2>
+
+          <div class="special-items">
+
+            <figure class="special-item">
+              <img src="../img/teaflex-cafe-13.png" alt="Image" class="special-item-image" />
+              <figcaption>
+                <span class="menu-item-title special-item-title">Soft Deli Cup</span>
+                  <span class="menu-item-price special-item-price">$25.00</span>
+                  <button class="btn btn-add btn-primary" type="button">
+                    BUY <i class="fas fa-shopping-cart"></i>
+                  </button>
+              </figcaption>
+            </figure>
+
+            <figure class="special-item">
+              <img src="../img/teaflex-cafe-12.png" alt="Image" class="special-item-image" />
+              <figcaption>
+                <span class="menu-item-title special-item-title">Calm Your Mind</span>
+                <span class="menu-item-price special-item-price">$30.00</span>
+                <button class="btn btn-add btn-primary" type="button">
+                  BUY <i class="fas fa-shopping-cart"></i>
+                </button>
+              </figcaption>
+            </figure>
+
+            <figure class="special-item">
+              <img src="../img/teaflex-cafe-11.png" alt="Image" class="special-item-image" />
+              <figcaption>
+                <span class="menu-item-title special-item-title">Tropical Kiss</span>
+                <span class="menu-item-price special-item-price">$35.00</span>
+                <button class="btn btn-add btn-primary" type="button">
+                  BUY <i class="fas fa-shopping-cart"></i>
+                </button>
+              </figcaption>
+            </figure>
+
+          </div>
+        </section>
+
+        <hr />
+
+        <!-- Cart -->
+        <section class="section">
+          <h2 class="section-header">Cart</h2>
+
+          <!-- Division in which added items will be displayed -->
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">TEA</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+
+          <div class="cart-items">
+          </div>
+
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+          </div>
+
+          <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+
+        </section>
+        <hr />
+
+        <!-- About our cafe -->
+        <section class="section section-small">
+          <h2 class="section-header">About our cafe</h2>
+          <p>Lorem ipsum dolor sit amet, oportere imperdiet ius id, senserit consetetur ea nam.
+            His impedit dissentias id, recusabo honestatis neglegentur sea eu, labitur inermis instructior eum at.
+            Duis bonorum complectitur eam te, tamquam veritus fuisset an mei, pri dolore molestiae ut.
+            Ad quo lobortis tractatos, essent integre conceptam cu pri.
+            Elit postea omittantur no mea, pri ne vivendum democritum, per error nonumy scripserit ea.</p>
+
+          <p>Cu vim fugit decore, pro simul invidunt hendrerit cu, ut semper sadipscing efficiantur vim.
+            Soleat petentium ne pro, in per illud movet detraxit, ridens luptatum legendos his ne.
+            Vim no case doming ocurreret, et duo melius latine. Vis id dictas expetenda conceptam.</p>
+        </section>
+        <hr />
+
+        <!-- Talk to us -->
+        <section class="section section-small">
+          <h2 class="section-header">Talk to us</h2>
+          <p>Reach us via
+            <a href="https://www.google.com/" class="contact-link">Email</a>
+            or follow us on social icons below. Thank you!</p>
+
+          <div class="social-icons">
+            <!-- Facebook -->
+            <div class="social-link-container">
+              <a href="https://www.google.com/" class="social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+
+            <!-- Twitter -->
+            <div class="social-link-container">
+              <a href="https://www.google.com/" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+
+            <!-- Instagram -->
+            <div class="social-link-container">
+              <a href="https://www.google.com/" class="social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p class="text-white footer-text">
+          Copyright &copy; 2020 FlexTea Cafe .
+        </p>
+      </footer>
+    </div>
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $(function() {
+        // Adjust intro image height based on width.
+        $(window).resize(function() {
+          var img = $("#tm-intro-img");
+          var imgWidth = img.width();
+
+          // 640x425 ratio
+          var imgHeight = (imgWidth * 425) / 640;
+
+          if (imgHeight < 300) {
+            imgHeight = 300;
+          }
+
+          img.css("min-height", imgHeight + "px");
+        });
+      });
+    </script>
+  </body>
+</html>

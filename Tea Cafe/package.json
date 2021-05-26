@@ -1,0 +1,28 @@
+{
+  "name": "web_tech_workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.15",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.5",
+    "express-session": "^1.17.1"
+  }
+}

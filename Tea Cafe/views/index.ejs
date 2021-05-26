@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/index_page/head') -%>
+
+<body>
+<div class="container">
+
+    <%- include('layouts/index_page/header') -%>
+
+    <div class="main-content">
+        <div class="main-image"></div> <!-- Main Image -->
+
+        <!-- Menu -->
+        <section class="section">
+            <h2 class="section-header">Menu</h2>
+            <div class="responsive-table">
+
+                <table>
+                    <tr class="tr-header">
+                        <th>&nbspTea</th>
+                        <th>Price</th>
+                        <th></th>
+                    </tr>
+                    <!-- Pure White Milk -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Pure White Milk</td>
+                        <td class="menu-item-price">$5.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Hong Kong Tea -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Hong Kong Tea</td>
+                        <td class="menu-item-price">$8.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Taiwan Tea -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Taiwan Tea</td>
+                        <td class="menu-item-price">$4.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Bubble Tea -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Bubble Tea</td>
+                        <td class="menu-item-price">$8.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Mixed Fruit Tea -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Mixed Fruit Tea</td>
+                        <td class="menu-item-price">$10.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <!-- Original Tea -->
+                    <tr class="menu-item">
+                        <td class="menu-item-title">Original Tea</td>
+                        <td class="menu-item-price">$12.00</td>
+                        <td class="menu-item-addButton">
+                            <button class="btn btn-add btn-primary" type="button">
+                                BUY <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </section>
+
+        <!-- Special Items -->
+        <section class="section">
+            <h2 class="section-header">Special Items</h2>
+
+            <div class="special-items">
+
+                <figure class="special-item">
+                    <img src="/img/teaflex-cafe-13.png" alt="Image" class="special-item-image" />
+                    <figcaption>
+                        <span class="menu-item-title special-item-title">Soft Deli Cup</span>
+                        <span class="menu-item-price special-item-price">$25.00</span>
+                        <button class="btn btn-add btn-primary" type="button">
+                            BUY <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+
+                <figure class="special-item">
+                    <img src="/img/teaflex-cafe-12.png" alt="Image" class="special-item-image" />
+                    <figcaption>
+                        <span class="menu-item-title special-item-title">Calm Your Mind</span>
+                        <span class="menu-item-price special-item-price">$30.00</span>
+                        <button class="btn btn-add btn-primary" type="button">
+                            BUY <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+
+                <figure class="special-item">
+                    <img src="/img/teaflex-cafe-11.png" alt="Image" class="special-item-image" />
+                    <figcaption>
+                        <span class="menu-item-title special-item-title">Tropical Kiss</span>
+                        <span class="menu-item-price special-item-price">$35.00</span>
+                        <button class="btn btn-add btn-primary" type="button">
+                            BUY <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Cart -->
+        <section class="section">
+            <h2 class="section-header">Cart</h2>
+
+            <!-- Division in which added items will be displayed -->
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">TEA</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+
+            <div class="cart-items"></div>
+
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+
+            <form action="/profile/orders/store" method="post" id="formToOrder" style="display: none">
+                <input type="text" id="total" name="total">
+            </form>
+
+            <button type="submit" form="formToOrder" class="btn btn-primary btn-purchase">PURCHASE</button>
+
+        </section>
+        <hr />
+
+        <!-- About our cafe -->
+        <%- include('layouts/index_page/about') -%>
+        <hr />
+
+        <!-- Talk to us -->
+        <%- include('layouts/index_page/talk_to_us') -%>
+    </div>
+</div>
+
+<!-- Footer -->
+<%- include('layouts/index_page/footer') -%>
+
+<%- include('layouts/index_page/script') -%>
+
+</body>
+</html>

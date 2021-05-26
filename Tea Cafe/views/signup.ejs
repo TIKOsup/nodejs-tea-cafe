@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('layouts/index_page/head') -%>
+
+<body>
+<div class="container">
+
+    <%- include('layouts/index_page/header') -%>
+
+    <div class="main-content">
+        <section class="section">
+            <h2 class="section-header" style="font-size: 30px"><b>SignUp Form</b></h2>
+
+            <% if (errors != null && errors.length > 0) { %>
+                <ul class="error-section">
+                    <!-- loop through each error -->
+                    <% for (var i = 0; i < errors.length; i++) { %>
+                        <li class="error-section-item"><%= errors[i] %></li>
+                    <% } %>
+                </ul>
+            <% } %>
+
+            <form action="/users/signup" method="post" class="signup">
+                <div class="field">
+                    <input autocomplete="off" type="email" placeholder="Email Address" name="email" value="<%= email %>">
+                </div>
+                <div class="field">
+                    <input autocomplete="off" type="text" placeholder="Username" name="username" value="<%= username %>">
+                </div>
+                <div class="field">
+                    <input autocomplete="off" type="password" placeholder="Password" name="password" value="<%= password %>">
+                </div>
+                <div class="field">
+                    <input autocomplete="off" type="password" placeholder="Confirm password" name="password-confirm">
+                </div>
+                <div class="field">
+                    <input type="submit" value="Signup">
+                </div>
+                <div class="login-link">Have an account? <a href="/auth/signin">Login now</a></div>
+            </form>
+        </section>
+
+        <hr />
+    </div>
+</div>
+
+<!-- Footer -->
+<%- include('layouts/index_page/footer') -%>
+
+<%- include('layouts/index_page/script') -%>
+
+</body>
+</html>
